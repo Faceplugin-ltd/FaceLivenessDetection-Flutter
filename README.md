@@ -46,7 +46,7 @@ screens, so the camera preview, the anti-spoofing gate, the shuffled challenge s
 progress ring and the result card are the same code that
 [FaceLivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android)
 and [FaceLivenessDetection-iOS](https://github.com/Faceplugin-ltd/FaceLivenessDetection-iOS) run.
-The engine is the same binary too — `facerecognitionsdk`, built by the LX SDK.
+The engine is the same binary too — `facerecognitionsdk`.
 
 | Layer | Where it lives | What it is |
 | ----- | -------------- | ---------- |
