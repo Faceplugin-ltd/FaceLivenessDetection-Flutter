@@ -21,7 +21,7 @@
 - [ ] Install Flutter 3.22+ and accept the Android / Xcode licences
 - [ ] Put the engine at `example/android/libfacesdk/facerecognitionsdk.aar` — [Get the engine](#get-the-engine)
 - [ ] On macOS, add the four iOS frameworks to `ios/Frameworks/`, then `pod install`
-- [ ] `python run_android` (or `python run_ios`) with a **physical** phone plugged in
+- [ ] `python run_android.py` (or `python run_ios.py`) with a **physical** phone plugged in
 - [ ] Home status shows **Ready** → **Active liveness** / **Passive liveness** unlock
 
 ## Introduction
@@ -119,7 +119,7 @@ example/android/libfacesdk/facerecognitionsdk.aar
 
 Download it from the
 [FaceRecognition-LivenessDetection-Android release](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Android/releases/tag/latest),
-copy it from `FaceLivenessDetection-Android/libs/`, or let `run_android` place it for you. AGP
+copy it from `FaceLivenessDetection-Android/libs/`, or let `run_android.py` place it for you. AGP
 refuses `implementation(files("…aar"))` on a library module, so the engine always arrives through
 `:libfacesdk` — never `android/libs/`.
 
@@ -139,7 +139,7 @@ build rather than as a link error.
 ## Run the demo
 
 ```bash
-python run_android     # or: python run_ios
+python run_android.py     # or: python run_ios.py
 ```
 
 The runner checks for a device, places the engine if it can find it, and starts the app. By hand:
