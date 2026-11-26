@@ -1,0 +1,7 @@
+/// The demo key FacePlugin issues for this bundle id.
+///
+/// Licences are offline and bound to the application id / bundle id, so your own build needs its
+/// own key — contact FacePlugin. A key issued for the previous engine reports
+/// "Invalid license" / "No activated" on this runtime.
+const String kLicenseKey =
+    'FP1.RlBMMQMAAQARORvv0c1FobtWuyMQAgAAkX9YcEheIYzvFG39GkmX+M0o07lI/zACAYbcKsl0p2LBGXcRMWOaYAWAcXIjskNsTibM5SQfgrFLov/gSARKk2Cz4wdJfmlx5IBL21ur8E746qvBNBMfZfVSdnmJd2CfzoqgDlXmr4Ug7anbjoWCV9ITr477NyMAQoFBom+z2nH0kNFWGwCpqA0nYvY0+RBQpkGJ1HtYG5s/rh7UyTf2rgZBUXRWKb1yrIKfjulBehBhscY7KdiK9NaPFiWEwcne2vTqQ9UD/ZhvCk3UdKc2sX6h5T9tupwonCQn+CphrsXPZQscqvHtXtL9HbBRUzoz2kvUJvY9saphPOVpNlmD0nToUxUaqQ0PD6cItFEuxLa+DDK726lI7oL/SrpoLqxZ2w2bV3Pj1epiLVNEIC26YTlHz/tL/EKD/5tkrbFAFKXBJs3y6WaU0CYS3f+7Rr1tO6e5wLOw2mGXKNgBlxVUY+1W1oPu7lFL7gKsw2IuwUOIYLcY7tlt8roq6YL5ZGVbkwXFjmqEV5ToigE+UsywgweLF8ogkzo0aDolYB16+zGBDx2vBymPw3cFLndKyWWCxNh5sBDo92qcK/bK4q1sajRbS1XV2CrTbc2Zxt2KqjRs22dXeoOc/htIgmPot+Y4L/cxNqmPpXeRNlCGzMY8W8o8lhjlkYS+/Gr1XrfQA+9ryl1oP/DDLQYq3/UiqK8liwAwgYgCQgDPYWzI4el51CURcd5RRxDvGnZCXGSUJYQh3ps1FbfM9QC/mjVk3ApNH3Oqe7fli1Q6G5pgRInHXAI4LYxyUlo6UAJCARdFXfMKyyoh8pf2wd2tB7kVF0DJ414wvGcmjkMI336OYB1O6D8cbumlzQOa5BLTeOL9wAqXtaitVcptBZb1sIpC';

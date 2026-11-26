@@ -1,0 +1,18 @@
+.DS_Store
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/build/
+**/.packages
+**/Pods/
+**/.symlinks/
+**/local.properties
+**/*.iml
+.idea/
+
+# Native runtimes are downloaded from Google Drive.
+**/*.aar
+ios/Frameworks/**/*.framework
+ios/Frameworks/**/*.xcframework
+!ios/Frameworks/README.md
+!example/android/libfacesdk/README.md

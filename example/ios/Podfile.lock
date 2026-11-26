@@ -1,0 +1,35 @@
+PODS:
+  - face_liveness_sdk (0.2.0):
+    - Flutter
+  - Flutter (1.0.0)
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - url_launcher_ios (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - face_liveness_sdk (from `.symlinks/plugins/face_liveness_sdk/ios`)
+  - Flutter (from `Flutter`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+
+EXTERNAL SOURCES:
+  face_liveness_sdk:
+    :path: ".symlinks/plugins/face_liveness_sdk/ios"
+  Flutter:
+    :path: Flutter
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+
+SPEC CHECKSUMS:
+  face_liveness_sdk: 1219a9f7561ead95ccf9f8a0b9d518e98e062e44
+  Flutter: 71a624a5bc0c04062bf19101d501e466baf2fb47
+  shared_preferences_foundation: a7c3904f2dedb3701dd1903cb152ef5e7df92422
+  url_launcher_ios: 7a95fa5b60cc718a708b8f2966718e93db0cef1b
+
+PODFILE CHECKSUM: 3ca54b7e7b6cd588f28567e41413ba046e7565d9
+
+COCOAPODS: 1.17.0
