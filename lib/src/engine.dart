@@ -68,7 +68,9 @@ class FaceLivenessEngine {
       case EngineState.notActivated:
       case EngineState.licenseInvalid:
       case EngineState.licenseExpired:
-        return SdkCode.message(_lastCode);
+        final String detail = (await lastLicenseError()).trim();
+        final String base = SdkCode.message(_lastCode);
+        return detail.isEmpty ? base : '$base $detail';
     }
   }
 }

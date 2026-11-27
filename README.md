@@ -152,6 +152,10 @@ flutter pub get
 cd example && flutter pub get && flutter run
 ```
 
+Do not commit `example/ios/Flutter/Generated.xcconfig`, `flutter_export_environment.sh`, or
+`ephemeral/` — they embed absolute `FLUTTER_ROOT` / project paths from your machine. The
+`.gitignore` and `run_ios.py` keep them local-only; a clean clone regenerates them.
+
 | Platform | Identifier |
 | -------- | ---------- |
 | Android `applicationId` | `com.faceplugin.faceliveness` |

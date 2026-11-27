@@ -44,6 +44,25 @@ def run(args: list[str], cwd: Path | None = None) -> None:
 
 
 FW = ROOT / "ios" / "Frameworks"
+EXAMPLE_IOS_FLUTTER = ROOT / "example" / "ios" / "Flutter"
+
+
+def scrub_stale_flutter_ios_config() -> None:
+    """Drop machine-local Flutter iOS outputs so a clone does not keep foreign paths.
+
+    Generated.xcconfig / flutter_export_environment.sh / ephemeral/ embed absolute
+    FLUTTER_ROOT and FLUTTER_APPLICATION_PATH from whoever last built. flutter pub get
+    recreates them for this machine.
+    """
+    for name in ("Generated.xcconfig", "flutter_export_environment.sh", "Flutter.podspec"):
+        path = EXAMPLE_IOS_FLUTTER / name
+        if path.is_file():
+            path.unlink()
+            print(f"removed stale {path.relative_to(ROOT)}")
+    ephemeral = EXAMPLE_IOS_FLUTTER / "ephemeral"
+    if ephemeral.is_dir():
+        shutil.rmtree(ephemeral)
+        print(f"removed stale {ephemeral.relative_to(ROOT)}/")
 
 
 def main() -> None:
@@ -54,6 +73,7 @@ def main() -> None:
     flutter = need("flutter", "Install Flutter and add it to PATH.")
     print(f"{ROOT.name}: ios (flutter)")
     fp_releases.ensure_ios_engine(ROOT, FW, with_bridge=False)
+    scrub_stale_flutter_ios_config()
     run([flutter, "pub", "get"])
     run([flutter, "pub", "get"], cwd=ROOT / "example")
     podfile = ROOT / "example" / "ios" / "Podfile"
