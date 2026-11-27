@@ -1,18 +1,69 @@
+# OS / editors
 .DS_Store
+.idea/
+.vscode/
+**/*.iml
+*.swp
+*~
+
+# Dart / Flutter caches & build
 **/.dart_tool/
 **/.flutter-plugins
 **/.flutter-plugins-dependencies
-**/build/
 **/.packages
-**/Pods/
+**/.pub-cache/
+**/.pub/
+**/build/
+**/coverage/
 **/.symlinks/
-**/local.properties
-**/*.iml
-.idea/
+.widget_preview/
 
-# Native runtimes are downloaded from Google Drive.
+# Plugin packages should not commit pubspec.lock
+/pubspec.lock
+
+# Android build / cache
+**/local.properties
+**/.gradle/
+**/.cxx/
+**/captures/
+**/*.apk
+**/*.aab
+**/*.ap_
+*.log
+.kotlin/
+.externalNativeBuild/
+
+# iOS build / cache
+**/Pods/
+**/DerivedData/
+**/*.xcuserstate
+**/xcuserdata/
+**/*.ipa
+**/*.dSYM
+**/*.dSYM.zip
+
+# Native runtimes (downloaded from GitHub Releases)
 **/*.aar
+example/android/libfacesdk/**/*.aar
+example/android/libfacesdk/**/*.so
 ios/Frameworks/**/*.framework
 ios/Frameworks/**/*.xcframework
+ios/Frameworks/**/*.framework/**
+ios/Frameworks/**/*.xcframework/**
 !ios/Frameworks/README.md
 !example/android/libfacesdk/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+
+# Env / secrets
+.env
+.env.*
+**/key.properties
+**/*.jks
+**/*.keystore
+!**/debug.keystore
