@@ -1,7 +1,24 @@
-/// The demo key FacePlugin issues for this bundle id.
+/// Demo FP1 licenses — same keys as Face-LivenessDetection-Android /
+/// Face-LivenessDetection-iOS. Bound to applicationId / bundle id below.
 ///
-/// Licences are offline and bound to the application id / bundle id, so your own build needs its
-/// own key — contact FacePlugin. A key issued for the previous engine reports
-/// "Invalid license" / "No activated" on this runtime.
-const String kLicenseKey =
+/// Always call [demoLicense] (not a single hard-coded string). The Android key
+/// is invalid on iOS and vice versa — that shows up as "Invalid license!".
+/// Request a new key if you change either id.
+library;
+
+import 'dart:io' show Platform;
+
+/// Android demo applicationId.
+const androidApplicationId = 'com.faceplugin.faceliveness';
+
+/// iOS demo bundle id.
+const iosBundleId = 'com.faceplugin.faceliveness.app';
+
+const androidLicense =
     'FP1.RlBMMQMAAQARORvv0c1FobtWuyMQAgAAkX9YcEheIYzvFG39GkmX+M0o07lI/zACAYbcKsl0p2LBGXcRMWOaYAWAcXIjskNsTibM5SQfgrFLov/gSARKk2Cz4wdJfmlx5IBL21ur8E746qvBNBMfZfVSdnmJd2CfzoqgDlXmr4Ug7anbjoWCV9ITr477NyMAQoFBom+z2nH0kNFWGwCpqA0nYvY0+RBQpkGJ1HtYG5s/rh7UyTf2rgZBUXRWKb1yrIKfjulBehBhscY7KdiK9NaPFiWEwcne2vTqQ9UD/ZhvCk3UdKc2sX6h5T9tupwonCQn+CphrsXPZQscqvHtXtL9HbBRUzoz2kvUJvY9saphPOVpNlmD0nToUxUaqQ0PD6cItFEuxLa+DDK726lI7oL/SrpoLqxZ2w2bV3Pj1epiLVNEIC26YTlHz/tL/EKD/5tkrbFAFKXBJs3y6WaU0CYS3f+7Rr1tO6e5wLOw2mGXKNgBlxVUY+1W1oPu7lFL7gKsw2IuwUOIYLcY7tlt8roq6YL5ZGVbkwXFjmqEV5ToigE+UsywgweLF8ogkzo0aDolYB16+zGBDx2vBymPw3cFLndKyWWCxNh5sBDo92qcK/bK4q1sajRbS1XV2CrTbc2Zxt2KqjRs22dXeoOc/htIgmPot+Y4L/cxNqmPpXeRNlCGzMY8W8o8lhjlkYS+/Gr1XrfQA+9ryl1oP/DDLQYq3/UiqK8liwAwgYgCQgDPYWzI4el51CURcd5RRxDvGnZCXGSUJYQh3ps1FbfM9QC/mjVk3ApNH3Oqe7fli1Q6G5pgRInHXAI4LYxyUlo6UAJCARdFXfMKyyoh8pf2wd2tB7kVF0DJ414wvGcmjkMI336OYB1O6D8cbumlzQOa5BLTeOL9wAqXtaitVcptBZb1sIpC';
+
+const iosLicense =
+    'FP1.RlBMMQMAAQASR/8KSL077W41P1kMAgAAeO7xq/Xl9I9RNUeW4pnmgceT4iFnB+TD8L9TLjv/sMFVSjIdVCrozc1SwyhqssZ0EKH7kkLlU3zvAMC7Xpo8wkXKpY7RDmOjTkeArkBQZLzMclidnMZbpWIR41ibyzDpx5iKRMLGl682MdlD5IquD9eqzd6UbQMzHOq2g6HioUbvwyX+pWZcu2Qd8oA6XSFj7sCACjxTeYv6bL0FMFF7coN+Cq3olfFo35SrX98cnPxmShbxlRw1bMUKNLHa2veFnHTlajJU4arOArKaXYQdZOEAYpMKJ7S6LVU+5raMj9uhOK0ZRdTi5YFpn5QjP7nYEk9QzNr3MRJaet1QC6dg8C9EDhIEihN867TLj9LjERMMrxANAboJ5f4eGaoo9xmFUNsdlSddEthXGBQDQVPYRR/ASx0XetPTgMvf+UrBoTGpV3s/h/hqSAjYFRSFBoq2PWgXypn1WNNvek3884fi1ROKCJdAp3F9LWG7fulICMOPhfO7UP31JiAkufGQHmJiVuwgBmPgPw//wg6O/V0MZAaNUsKe254he9Iqh7fDuqoapkaiZeN4ayHwvAz+plT0Xg/IIBVKA3r8wYxrn6Bv7tQ0nKiexb2TFQuP7nnmkG91oQxU2j4q2LAVeGmvU1X2WWtGkFCXP1LKs40vT4zbZCXiS8xTIGg7bAPimJa2HT/LdxbxrzB5uReoySyLADCBiAJCAN5t4UUmEa7GTXPJJQTLCBUWAxAS45ZVX+Gvl/NfD8cBDuot2X21yi2ii8C8KhawBXpK+lNM9v2+j7j2WjazqHV1AkIB2fbWuTH6G98Fej+s5TtDOI+wKKFcdWXz9+Osxk2yWEiSd5ohBshk0WGS92oOqsIbOSqphrnel16T5DjbLjuPl3s=';
+
+/// Platform-correct demo key. Prefer this over hard-coding either constant.
+String demoLicense() => Platform.isIOS ? iosLicense : androidLicense;

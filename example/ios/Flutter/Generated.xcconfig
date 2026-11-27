@@ -3,14 +3,15 @@ FLUTTER_ROOT=/Users/gentlebear/develop/flutter
 FLUTTER_APPLICATION_PATH=/Users/gentlebear/Desktop/Work/private_develop_org/repositories/APPs/Face-LivenessDetection-Flutter/example
 FLUTTER_FRAMEWORK_SWIFT_PACKAGE_PATH=/Users/gentlebear/Desktop/Work/private_develop_org/repositories/APPs/Face-LivenessDetection-Flutter/example/ios/Flutter/ephemeral/Packages/.packages/FlutterFramework
 COCOAPODS_PARALLEL_CODE_SIGN=true
-FLUTTER_TARGET=lib/main.dart
+FLUTTER_TARGET=/Users/gentlebear/Desktop/Work/private_develop_org/repositories/APPs/Face-LivenessDetection-Flutter/example/lib/main.dart
 FLUTTER_BUILD_DIR=build
 FLUTTER_BUILD_NAME=0.2.0
 FLUTTER_BUILD_NUMBER=1
+CONFIGURATION_BUILD_DIR=/Users/gentlebear/Desktop/Work/private_develop_org/repositories/APPs/Face-LivenessDetection-Flutter/example/build/ios/iphoneos
 EXCLUDED_ARCHS[sdk=iphonesimulator*]=i386 arm64
 EXCLUDED_ARCHS[sdk=iphoneos*]=armv7
 DART_DEFINES=RkxVVFRFUl9CVUlMRF9OQU1FPTAuMi4w,RkxVVFRFUl9CVUlMRF9OVU1CRVI9MQ==,RkxVVFRFUl9WRVJTSU9OPTMuNDcuMg==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049ZDNiMTRjODc2OQ==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049YTgwNGIyNjE2NA==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMy4y
 DART_OBFUSCATION=false
-TRACK_WIDGET_CREATION=false
-TREE_SHAKE_ICONS=true
+TRACK_WIDGET_CREATION=true
+TREE_SHAKE_ICONS=false
 PACKAGE_CONFIG=/Users/gentlebear/Desktop/Work/private_develop_org/repositories/APPs/Face-LivenessDetection-Flutter/example/.dart_tool/package_config.json

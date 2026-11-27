@@ -171,16 +171,18 @@ cd example && flutter pub get && flutter run
 ## SDK License
 
 Licences are **offline** and bound to your `applicationId` / bundle id, so your own app needs its own
-key. The demo ships the key for `com.faceplugin.faceliveness`.
+key. The demo ships **two** keys in [`example/lib/license.dart`](example/lib/license.dart):
 
-> **This build changed engines.** The app now runs on `facerecognitionsdk`, which checks licences
-> with its own library. If the home status shows **Invalid license!** or **No activated!** on a clean
-> install, the bundled key predates the change — [contact us](#contact) for one issued for these ids
-> on this runtime.
+| Platform | Id | Constant |
+| -------- | -- | -------- |
+| Android | `com.faceplugin.faceliveness` | `androidLicense` |
+| iOS | `com.faceplugin.faceliveness.app` | `iosLicense` |
 
-The key lives in [`example/lib/license.dart`](example/lib/license.dart). After activation,
-`FaceLivenessEngine.instance.license` reports what it unlocks: both liveness screens stay locked
-unless the key grants **Liveness**.
+`demoLicense()` picks the right one at runtime. Using the Android key on iOS (or the other way
+around) shows **Invalid license!** — keep both ids and both keys when you publish the demo.
+
+After activation, `FaceLivenessEngine.instance.license` reports what it unlocks: both liveness
+screens stay locked unless the key grants **Liveness**.
 
 ## Setup on your own app
 
